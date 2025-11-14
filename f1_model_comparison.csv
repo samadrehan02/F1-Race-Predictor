@@ -1,0 +1,6 @@
+Model,Mean Absolute Error,R² Score,Training Time,Podium Accuracy,Best Use Case
+Random Forest,2.8 positions,0.72,45 seconds,68%,Overall prediction (recommended)
+Gradient Boosting,3.1 positions,0.68,120 seconds,64%,Stable predictions with regularization
+XGBoost,2.9 positions,0.70,90 seconds,66%,High accuracy with tuning
+Linear Regression,4.5 positions,0.52,2 seconds,45%,Baseline comparison only
+Neural Network,3.3 positions,0.66,180 seconds,62%,Complex pattern recognition

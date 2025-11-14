@@ -1,0 +1,10 @@
+Model,Parameter,Recommended Range,Default Value,Impact
+Random Forest,n_estimators,100-500,100,"More trees = better accuracy, slower training"
+Random Forest,max_depth,10-30,None,"Deeper = more complex patterns, risk of overfitting"
+Random Forest,min_samples_split,2-10,2,"Higher = prevents overfitting, simpler trees"
+Gradient Boosting,n_estimators,100-500,100,"More estimators = better accuracy, slower"
+Gradient Boosting,learning_rate,0.01-0.3,0.1,"Lower = more careful learning, less overfitting"
+Gradient Boosting,max_depth,3-10,3,"Deeper = captures interactions, risk of overfit"
+XGBoost,n_estimators,100-1000,100,More trees = ensemble strength
+XGBoost,learning_rate,0.01-0.3,0.3,Controls step size in boosting
+XGBoost,max_depth,3-10,6,Tree complexity control

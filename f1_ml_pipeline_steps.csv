@@ -1,0 +1,19 @@
+Stage,Component,Description
+Data Collection,Race Session Data,"Race results, positions, lap times from FastF1 API"
+Data Collection,Qualifying Data,"Grid positions, qualifying times for each driver"
+Data Collection,Lap Telemetry,"Speed, throttle, brake data, sector times"
+Data Collection,Weather Data,"Track temperature, air temperature, rainfall"
+Data Collection,Pit Stop Data,Number and timing of pit stops per driver
+Preprocessing,Filter DNF/DNS,Remove Did Not Finish and Did Not Start entries
+Preprocessing,Handle Missing Values,Impute median values for missing lap times
+Preprocessing,Encode Categories,Convert team names and drivers to numeric codes
+Feature Engineering,Grid Advantage,Calculate 21 - GridPosition for advantage metric
+Feature Engineering,Relative Pace,Normalize lap time relative to fastest in race
+Feature Engineering,Team Strength,Average team position across all races
+Feature Engineering,Driver Skill,Historical driver performance metric
+Model Training,Random Forest (200 trees),Ensemble of 200 decision trees with max depth 15
+Model Training,Gradient Boosting (200 est.),Sequential boosting with learning rate 0.1
+Model Training,Cross-validation,5-fold cross-validation for robust evaluation
+Evaluation,MAE (2-4 positions),Typical error of 2-4 positions from actual
+Evaluation,R² Score (0.65-0.75),Model explains 65-75% of variance in positions
+Evaluation,Feature Importance,Identify which features matter most for predictions
